@@ -54,7 +54,7 @@ n=int(input("Enter the address required: "))
 token=token_generator(n)
 fin=["","",""]
 accessB=input("Node B, do you grant access for node A to access the buffer?(YES or NO) ")
-accessC=input("Node A, do you grant access for node A to access the buffer?(YES or NO) ")
+accessC=input("Node C, do you grant access for node A to access the buffer?(YES or NO) ")
 fin[0]=encrypt_string(token,NodeA.key)+str(n)
 if (accessB=="YES"):
     fin[1]=encrypt_string(token,NodeB.key)+str(n)
