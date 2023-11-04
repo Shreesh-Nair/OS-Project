@@ -183,8 +183,9 @@
             printf("%s: %s\n", nodes[i].name, decrypted_key);
         }}
         else {
+            printf("Node A: %s\n", token);
             if (arr[0]==0 && arr[1]==0){
-            for (int i=0;i<2;i++){
+            for (int i=1;i<=2;i++){
             char encrypted_key[256];
             encrypt_string(token, nodes[i].key, encrypted_key);
             char decrypted_key[256];  
@@ -199,4 +200,5 @@
         free(nodes);
 
         return 0;
+
     }
