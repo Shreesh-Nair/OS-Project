@@ -70,6 +70,9 @@ else:
         fin[2]=encrypt_string(token,NodeC.alt)+str(n)
 
 final=[encrypt_string(token,NodeA.key),encrypt_string(token,NodeB.key),encrypt_string(token,NodeC.key)]
+print("Encrytped Keys:")
+for i in range(3):
+    print(final[i])
 if fin==final:
     print("Access Granted")
 else:
